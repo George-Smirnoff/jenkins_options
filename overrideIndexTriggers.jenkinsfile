@@ -1,0 +1,14 @@
+pipeline{
+    agent any
+    options { 
+        timestamps ()
+        //overrideIndexTriggers()
+    }
+    stages{
+        stage("A"){
+            steps{
+                echo "======== Hello World 1 ========"
+            }
+        }
+    }
+}
