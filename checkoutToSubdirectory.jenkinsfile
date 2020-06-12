@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("A"){
             steps{
-                sh "echo A > test.someDir"
+                "echo A > test.someDir"
             }
         }
     }
