@@ -1,0 +1,14 @@
+pipeline{
+    agent none
+    options { 
+        timestamps ()
+        checkoutToSubdirectory("someDir")
+    }
+    stages{
+        stage("A"){
+            steps{
+                sh "echo A > test.someDir"
+            }
+        }
+    }
+}
